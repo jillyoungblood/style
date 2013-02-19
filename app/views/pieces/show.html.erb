@@ -1,0 +1,28 @@
+<p id="notice"><%= notice %></p>
+
+<p class="piece_display">
+
+  <br>
+  <b><%= @piece.item %> by <%= @piece.designer %></b>
+  <br>
+  <br>
+  <label class="piece_labels">Color: <%= @piece.color %></label>
+  <br>
+  <label class="piece_labels">Material: <%= @piece.material %></label>
+  <br>
+  <label class="piece_labels">Fit: <%= @piece.fit %></label>
+  <br>
+  <label class="piece_labels">Size: </label><%= @piece.size %>
+  <br>
+  <label class="piece_labels">Details: <%= @piece.details %>
+  <br></label>
+  <label class="piece_labels">Notes: <%= @piece.notes %>
+  <br></label>
+  <br>
+  <%= link_to 'Edit', edit_piece_path(@piece) %> |
+  <%= link_to('Delete', @piece, :method => :delete, :confirm => 'Are you sure?') %> |
+  <%= link_to 'Back', pieces_path %>
+  <div id="piece_image_display">
+    <%= image_tag(@piece.image) %>
+  </div>
+</p>

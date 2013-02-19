@@ -1,0 +1,110 @@
+/*
+ *= require 'foundation/stylesheets/foundation.min.css'
+ *= require 'foundation/stylesheets/app.css'
+ */
+
+@import url(http://fonts.googleapis.com/css?family=Cantata+One);
+
+/*
+General
+*/
+
+#main_heading
+{
+  font-size: 75px;
+}
+
+.page_headers
+{
+  font-family: 'Cantata One', serif;
+  font-size: 54px;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+.piece_links
+{
+  bottom: 50px;
+  left: 5px
+}
+
+/*
+End General
+*/
+
+/*
+Pieces display
+*/
+
+.piece_display
+{
+  display: inline-block;
+  font-family: 'Cantata One', serif;
+  position:absolute;
+  right:0px;
+  top:125px;
+}
+
+#piece_image_display
+{
+  float: left;
+}
+
+.piece_labels
+{
+  display: inline;
+}
+
+/*
+End Pieces Display
+*/
+/*
+New Piece Page
+*/
+.new_piece_display
+{
+  display: inline-block;
+  font-family: 'Cantata One', serif;
+}
+
+#form_image
+{
+  float: right;
+}
+
+/*
+End New Piece Page
+*/
+/*
+Outfit display:
+*/
+.outfit_display
+{
+  display: inline;
+  font-family: 'Cantata One', serif;
+  font-size: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.outfit_name
+{
+  font-family: 'Cantata One', serif;
+  font-size: 24px;
+}
+
+/*.outfit_display
+{
+  display: inline-block;
+}
+*/
+/*.outfit_index
+{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}*/
+/*
+End Outfit Display
+*/

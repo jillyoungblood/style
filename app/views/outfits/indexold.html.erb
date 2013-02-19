@@ -1,0 +1,73 @@
+<div class="page_headers">Greatest Hits</div>
+<br>
+<br>
+<br>
+<%= link_to 'New Outfit', new_outfit_path %>
+
+<div class="row">
+
+  <!-- Side Bar -->
+
+<div class="four mobile-four columns">
+
+          <img src="http://1.bp.blogspot.com/_0r0x8pliuno/TTiIDWOREZI/AAAAAAAAAOg/lKYr5zaj-_k/s1600/tumblr_lfc0ie97EH1qg7zeko1_500.png">
+
+          <div class="hide-for-small panel">
+            <h3>Browse your outfits</h3>
+            <h5 class="subheader">Greatest hits
+            </h5>
+          </div>
+
+          <a href="#">
+          <div class="panel callout radius" align="center">
+            <h6>99&nbsp; piecess in your closet</h6>
+          </div>
+          </a>
+
+        </div>
+
+    <!-- End Side Bar -->
+<!--
+Trial Code
+ -->
+<%= link_to('New Outfit', new_outfit_path) %>
+
+:: <%= link_to('Edit Outfit', edit_outfit_path(@outfit)) %>
+:: <%= link_to('Delete Outfit', @outfit, :method => :delete, :confirm => 'Are you sure?') %>
+
+<div class='spacer'></div>
+
+<ul>
+  <li><%= @outfit.name %></li>
+  <li><%= image_tag(@outfit.image) %></li>
+
+  <% @outfit.pieces.each do |piece| %>
+    <li><%= piece.item %></li>
+    <li><%= image_tag(piece.image) %></li>
+  <% end %>
+</ul>
+<!--
+End Trial Code
+
+ -->
+ <!-- Thumbnails -->
+
+        <div class="eight columns">
+          <div class="row">
+
+<% @outfits.each do |outfit| %>
+
+<div class="four mobile-two columns">
+
+  <%=outfit.name %><p>
+
+
+
+    <!-- End Thumbnails -->
+
+<% end %>
+
+</table>
+
+<br />
+

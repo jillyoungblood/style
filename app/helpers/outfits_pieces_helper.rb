@@ -1,0 +1,2 @@
+module OutfitsPiecesHelper
+end

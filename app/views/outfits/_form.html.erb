@@ -1,0 +1,34 @@
+<%= form_for(@outfit) do |f| %>
+  <% if @outfit.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@outfit.errors.count, "error") %> prohibited this outfit from being saved:</h2>
+
+      <ul>
+      <% @outfit.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name, :autofocus => 'autofocus' %>
+    <%= f.text_field :name %>
+    <br>
+    <%= f.label :occasion %>
+    <%= f.text_field :occasion %>
+    <br>
+    <%= f.label :notes %>
+    <%= f.text_field :notes %>
+
+<br>
+<% Piece.order(:image).each do |piece| %>
+  <span><%= image_tag(piece.image, :size => "100x100") %></span>
+  <%= check_box_tag 'outfit[piece_ids][]', piece.id, piece.in?(@outfit.pieces) %>
+<% end %>
+
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
