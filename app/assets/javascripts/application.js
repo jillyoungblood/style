@@ -6,5 +6,3 @@
 //= require 'foundation/javascripts/app.js'
 //= require 'underscore-min.js'
 //= require 'style'
-
-

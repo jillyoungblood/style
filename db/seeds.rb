@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 User.delete_all
 Outfit.delete_all
 Piece.delete_all
@@ -7,6 +8,11 @@ u2 = User.create(:name => 'Cecelia', :email => 'cecelia@catmail.com', :password 
 u3 = User.create(:name => 'Tim', :email => 'tim.gunn@gmail.com', :password => 'abc', :password_confirmation => 'abc')
 
 
+=======
+Outfit.delete_all
+Piece.delete_all
+
+>>>>>>> 72a6c0fa2436024defa09d7955523424bbed655f
 p1 = Piece.create(:image => 'http://cdn.kirnazabete.com/media/catalog/product/cache/1/image/5e06319eda06f020e43594a9c230972d/l/a/lan27p60grn_1/.jpg', :item => 'Dress', :designer => 'Lanvin', :color => 'kelly green', :material => 'polyamide', :fit => 'fitted', :size => 'medium', :details => 'short sleeves, hits mid-thigh', :notes => 'stretchy')
 
 p2 = Piece.create(:image => 'http://www4.images.coolspotters.com/photos/864583/rag-and-bone-jean-leather-sleeve-denim-jacket-in-bleech-profile.jpg', :item => 'Jacket', :designer => 'Rag & Bone', :color => 'blue and black', :material => 'denim with leather sleeves', :fit => 'fitted and cropped', :size => 'large', :details => 'none', :notes => 'light enough to wear under a coat')

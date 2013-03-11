@@ -1,4 +1,5 @@
 Style::Application.routes.draw do
+
   root :to => 'home#index'
 
   resources :outfits_pieces
@@ -15,5 +16,4 @@ Style::Application.routes.draw do
   # get '/faq' => 'home#faq'
   # get '/contact' => 'home#contact'
   # get '/index' => 'home#index'
-
 end

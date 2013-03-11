@@ -1,0 +1,54 @@
+<h1>Your Closet</h1>
+
+<div class="row">
+
+  <!-- Side Bar -->
+
+<div class="four mobile-four columns">
+
+          <img src="http://1.bp.blogspot.com/_0r0x8pliuno/TTiIDWOREZI/AAAAAAAAAOg/lKYr5zaj-_k/s1600/tumblr_lfc0ie97EH1qg7zeko1_500.png">
+
+          <div class="hide-for-small panel">
+            <h3>Browse your wardrobe</h3>
+            <h5 class="subheader">Go shopping in your closet!
+            </h5>
+          </div>
+
+        </div>
+
+    <!-- End Side Bar -->
+
+ <!-- Thumbnails -->
+
+        <div class="eight columns">
+          <div class="row">
+
+<% @pieces.each do |piece| %>
+
+<div class="four mobile-two columns">
+
+              <%= link_to(image_tag(piece.image), piece) %>
+<!--
+              <div class="panel">
+                <h5><%= piece.item %></h5>
+                <h6 class="subheader"><%= piece.designer %></h6>
+              </div> -->
+            </div>
+<br>
+<br>
+
+    <!-- End Thumbnails -->
+<!--
+
+
+    <td><%= link_to 'Show', piece %></td>
+    <td><%= link_to 'Edit', edit_piece_path(piece) %></td>
+    <td><%= link_to 'Destroy', piece, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr> -->
+
+<% end %>
+
+</table>
+
+<br />
+

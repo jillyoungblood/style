@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+<div class="outfit_name"><%= @outfit.name %></div>
+<br>
+<br>
+<div class="outfit_display"
+  <% @outfit.pieces.each do |piece| %>
+    <div class="outfit_display"><%= image_tag(piece.image, :size => "250x250") %></div>
+  <% end %>
+</div>
+</ul>
+
+</p>
+
+<%= link_to('New Outfit', new_outfit_path) %>
+| <%= link_to 'Edit', edit_outfit_path(@outfit) %>
+| <%= link_to('Delete Outfit', @outfit, :method => :delete, :confirm => 'Are you sure?') %>
+
+
+
+
+<!--
+
+<%= link_to('Go to Piece', piece_path) %> -->
+
