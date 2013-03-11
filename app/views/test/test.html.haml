@@ -1,0 +1,41 @@
+%script{:src => "jquery.js", :type => "text/javascript"}
+%script{:src => "jquery.ui.js", :type => "text/javascript"}
+%script{:src => "jquery.jcoverflip.js", :type => "text/javascript"}
+
+#your_closet_page_header Your Closet
+.row
+  / Side Bar
+  .four.mobile-four.columns
+    %img{:src => "http://1.bp.blogspot.com/_0r0x8pliuno/TTiIDWOREZI/AAAAAAAAAOg/lKYr5zaj-_k/s1600/tumblr_lfc0ie97EH1qg7zeko1_500.png"}/
+    .hide-for-small.panel
+      %h3 Browse your wardrobe
+      %h5.subheader
+        Go shopping in your closet!
+  / End Side Bar
+  / Thumbnails
+
+%ul#flip
+  %li
+    %a{:href => "piece.image"}
+      %img{"..." => ""}/
+      %span.title My title
+
+  .eight.columns
+    .row
+      - @pieces.each do |piece|
+        .four.mobile-two.columns
+          = link_to(image_tag(piece.image), piece, :class => 'pretty_pictures', :size => "100x100")
+          /
+            <div class="panel">
+            <h5><haml:loud> piece.item </haml:loud></h5>
+            <h6 class="subheader"><haml:loud> piece.designer </haml:loud></h6>
+            </div>
+        %br/
+        %br/
+        / End Thumbnails
+        /
+          <td><haml:loud> link_to 'Show', piece </haml:loud></td>
+          <td><haml:loud> link_to 'Edit', edit_piece_path(piece) </haml:loud></td>
+          <td><haml:loud> link_to 'Destroy', piece, method: :delete, data: { confirm: 'Are you sure?' } </haml:loud></td>
+          </tr>
+      %br/

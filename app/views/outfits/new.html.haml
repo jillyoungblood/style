@@ -1,0 +1,13 @@
+.page_headers New outfit
+%br/
+%br/
+%br/
+/ #myModal.reveal-modal
+/   %h2 Awesome. I have it.
+/   %p.lead Your couch.  It is mine.
+/   %p Im a cool paragraph that lives inside of an even cooler modal. Wins
+/   %a.close-reveal-modal ×
+
+/   %a{"data-reveal-id" => "myModal", :href => "#"} Click Me For A Modal
+= render 'form'
+= link_to 'Back', outfits_path, :class => 'links'

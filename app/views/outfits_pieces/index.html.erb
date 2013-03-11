@@ -1,0 +1,23 @@
+<h1>Listing outfits_pieces</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @outfits_pieces.each do |outfits_piece| %>
+  <tr>
+    <td><%= outfits_piece.name %></td>
+    <td><%= link_to 'Show', outfits_piece %></td>
+    <td><%= link_to 'Edit', edit_outfits_piece_path(outfits_piece) %></td>
+    <td><%= link_to 'Destroy', outfits_piece, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Outfits piece', new_outfits_piece_path %>

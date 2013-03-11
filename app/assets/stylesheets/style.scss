@@ -1,0 +1,204 @@
+@import url(http://fonts.googleapis.com/css?family=Cantata+One);
+
+/*
+General
+*/
+
+.ui-jcoverflip
+{
+  position: relative;
+}
+
+.ui-jcoverflip--item
+{
+  position: absolute;
+  display: block;
+}
+
+.select_piece
+{
+  padding: 15px;
+}
+
+.pretty_pictures
+{
+  border: 1px solid #D3DCF2;
+  padding: 30px;
+}
+
+.outfit_item
+{
+  width: 850 px;
+}
+
+.field
+{
+  width: 850px;
+}
+
+#your_closet_page_header
+{
+  font-family: 'Cantata One', serif;
+  font-size: 54px;
+  font-weight: bold;
+  padding-top: 10px;
+  margin-left: 350px;
+  margin-bottom: 55px;
+}
+
+#main_heading
+{
+  font-size: 75px;
+}
+
+.page_headers
+{
+  font-family: 'Cantata One', serif;
+  font-size: 54px;
+  font-weight: bold;
+  padding-top: 10px;
+  margin-left: 350px
+}
+
+.piece_links
+{
+  bottom: 50px;
+  left: 5px
+}
+
+.outfit_item
+{
+  border: 1px solid #D3DCF2;
+  margin-left: 5px;
+  margin-bottom: 10px;
+  display: inline-block;
+  input[type='checkbox']
+  {
+    display: none;
+  }
+}
+
+/*
+End General
+*/
+
+/*
+Pieces display
+*/
+
+.piece_display
+{
+  display: inline-block;
+  font-family: 'Cantata One', serif;
+  position:absolute;
+  right:0px;
+  top:125px;
+  margin-right: 350px;
+}
+
+#piece_image_display
+{
+  float: left;
+  margin-left: 300px;
+}
+
+.piece_labels
+{
+  display: inline;
+}
+
+form
+{
+  width: 500px;
+  position: relative;
+  margin-left: 350px
+}
+
+.links
+{
+  font-size: 14px;
+  margin-left: 350px;
+}
+
+
+/*
+End Pieces Display
+*/
+/*
+New Piece Page
+*/
+.new_piece_display
+{
+  display: inline-block;
+  font-family: 'Cantata One', serif;
+}
+
+#form_image
+{
+  float: right;
+  margin-right: 140px;
+}
+
+h1
+{
+  margin-left: 345px;
+  margin-bottom: 50px;
+}
+
+/*
+End New Piece Page
+*/
+/*
+Outfit display:
+*/
+.outfit_display
+{
+  display: inline;
+  font-family: 'Cantata One', serif;
+  font-size: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.outfit_name
+{
+  font-family: 'Cantata One', serif;
+  font-size: 24px;
+}
+
+.mixmatch
+{
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  float: left;
+  border: 1px dashed black;
+}
+
+.piece
+{
+  width: 10px;
+  height: 10px;
+  float: left;
+}
+
+#myModal
+{
+  width: 70%;
+}
+
+/*.outfit_display
+{
+  display: inline-block;
+}
+*/
+/*.outfit_index
+{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}*/
+/*
+End Outfit Display
+*/

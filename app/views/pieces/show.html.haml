@@ -1,0 +1,32 @@
+%p#notice= notice
+%p.piece_display
+  %br/
+  %b
+    = @piece.item, :class => 'piece'
+    by #{@piece.designer}
+  %br/
+  %br/
+  %label.piece_labels
+    Color: #{@piece.color}
+  %br/
+  %label.piece_labels
+    Material: #{@piece.material}
+  %br/
+  %label.piece_labels
+    Fit: #{@piece.fit}
+  %br/
+  %label.piece_labels Size:
+  = @piece.size
+  %br/
+  %label.piece_labels
+    Details: #{@piece.details}
+    %br/
+  %label.piece_labels
+    Notes: #{@piece.notes}
+    %br/
+  %br/
+  = link_to 'Edit', edit_piece_path(@piece)
+  = link_to('Delete', @piece, :method => :delete, :confirm => 'Are you sure?')
+  = link_to 'Back', pieces_path
+  #piece_image_display
+    = image_tag(@piece.image)

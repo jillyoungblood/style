@@ -1,0 +1,27 @@
+<div class="row">
+    <div class="twelve columns">
+
+    <nav class="top-bar">
+      <ul class="top-bar">
+        <li class="name"><h1><a href="/">Stylemine</a></h1></li>
+        <li class="toggle-topbar"><a href="#"></a></li>
+      </ul>
+
+      <section>
+        <ul class="left">
+          <li><%= link_to 'Open Your Closet', pieces_path %></li>
+          <li><%= link_to 'Browse Outfits', outfits_path %></li>
+          <li><%= link_to 'Add Piece', new_piece_path %></li>
+          <li><%= link_to 'Create Outfit', new_outfit_path %>
+          <li><%= link_to 'Create Account', new_user_path %>
+          </li>
+
+        </ul>
+
+      <%= login_nav %>
+
+      </section>
+    </nav>
+
+  </div>
+</div>
